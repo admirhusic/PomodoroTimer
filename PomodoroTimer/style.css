@@ -1,0 +1,114 @@
+@font-face {
+    font-family: axis-font;
+    src: url("fonts/axis.otf");
+}
+body {
+    overflow-x: hidden;
+}
+.window {
+    background-color: #363636;
+    margin-top: 5%;
+    color: #ff2552;
+    text-align: center;
+    font-family: axis-font;
+    padding: 5em;
+    -webkit-box-shadow: 0px 10px 23px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 23px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 23px -2px rgba(0, 0, 0, 0.75);
+}
+.window a {
+    color: #ff2552;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.window a:hover {
+    color: #ce2346;
+    text-decoration: none;
+}
+.window a:focus,
+.window a:active {
+    color: #ff2552;
+    text-decoration: none;
+}
+.time {
+    padding: 5em;
+}
+.button {
+    color: #363636;
+    transition: all .3s ease-in-out;
+    border: none;
+    font-size: 1.5em;
+}
+.button:hover {
+    
+}
+.button.green {
+    background-color: #71ff25;
+    border-color: #71ff25;
+}
+.button.red {
+    background-color: #ff2552;
+    border-color: #ff2552;
+}
+.button.yellow {
+    background-color: #ffD025;
+    border-color: #ffD025;
+}
+/*  Sidebar  */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled {
+    padding-left: 250px;
+}
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+.settings {
+
+padding: 3em;
+ text-align: center;
+    
+}
+
+.settings input[type="range"] {
+
+    width: 25%;
+    
+   
+}
+
+
+.active{
+ 
+ border-bottom: 1px solid red;
+}
